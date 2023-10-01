@@ -1,4 +1,4 @@
-body{
+.index{
     background-image: url(minimalW.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -36,5 +36,71 @@ border: 3px outset black;
         line-height: 2;
         color: #025464
     }
+    #para {
+        margin:10px;
+        font-size: 18px;
+        font-weight: 500;
+        font-family : 'Lucida Handwriting';
+        text-decoration: double;
+        word-spacing: 8px;
+        line-height: 1.5;
+        text-align: left;
+        
+
+    }
+    #intro{
+        font-size: 20px;
+        font-weight:700;
+        font-family : 'Lucida Handwriting';
+        word-spacing: 8px;
+        line-height: 1.5;
+        text-align: left;
+
+    }
+    #thoughts {
+
+        font-size: 18px;
+        font-weight: 600;
+        font-family : 'Lucida Handwriting';
+        text-decoration: double;
+        word-spacing: 8px;
+        line-height: 1.5;
+        text-align: left;
+        
+    }
+    #about{
+        background-image: url(bulbW.png);
+        background-repeat:no-repeat;
+       background-attachment: fixed;
+       background-size:cover;
+       text-transform: capitalize;
+       color: white;
+       text-align: left;
+
+}
+#home a{
+    font-weight: 200;
+    font-size: 25px;
+    text-decoration: none;
+}
+#sev{
+    background-image: url(planeW.jpg);
+}
+#feed{
+    background-image: url(glassballW.jpg);
+}
+#contact{
+    background-image: url(orangeW.jpg);
+}
+  
+#connect{
+    font-size: xx-large;
+    
+    list-style-type: none;
+}
+#connect li{
+    text-decoration: none;
+}
+
 
         
