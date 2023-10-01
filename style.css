@@ -1,5 +1,6 @@
 *{
     text-transform: capitalize;
+    font-family : 'Lucida Handwriting';
 }
 
 
@@ -29,6 +30,7 @@ border: 3px outset black;
    
     text-decoration: none;
     color: black;
+    font-weight: 800;
   
         font-family: 'Lucida Sans';
         
@@ -122,5 +124,56 @@ border: 3px outset black;
     text-decoration: none;
 }
 
+.target li{
+    list-style-type: none;
+}
 
-        
+.target li a{
+
+    text-decoration: none;
+    color: #262A56;
+    font-weight: 700;
+    text-align : left;
+        word-spacing: 8px;
+        line-height: 2;
+        font-size:25px ;
+        line-height: 2;
+}
+.disco {
+
+    background-color: #0B2447;
+ 
+}
+.room {
+    position: relative;
+    width: 100%;
+    height : 100vh;
+    overflow :hidden;
+
+}
+.ball span{
+    position: relative;
+    display: flex;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background-color: chocolate;
+    margin:0 4px ;
+    box-shadow: 0 0 0 10px  chartreuse, 0 0 50px khaki , 0 0 100px goldenrod ;
+    animation: light 15s linear infinite ;
+}
+.ball span:nth-child(even){
+    background-color: red;
+    box-shadow: 0 0 0 10px  darkmagenta , 0 0 50px darkorchid , 0 0 100px darkorchid;
+}
+@keyframes light  {
+
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    { 
+        transform: translateY(-10vh) scale(1);
+    }
+}
