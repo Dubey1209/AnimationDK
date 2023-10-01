@@ -1,9 +1,13 @@
+*{
+    text-transform: capitalize;
+}
+
+
 .index{
     background-image: url(minimalW.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    text-transform: capitalize;
 }
 .navbar {
 background-color: #E5D283;
@@ -27,7 +31,14 @@ border: 3px outset black;
     color: black;
   
         font-family: 'Lucida Sans';
+        
     }
+    .navbar a:hover {
+        background-color: white;
+            color: black;
+        }
+
+
     h1 {
         text-align :center;
         margin : 50px 50px ;
@@ -35,6 +46,15 @@ border: 3px outset black;
         word-spacing: 8px;
         line-height: 2;
         color: #025464
+    }
+    #animation{
+        text-align : left;
+        font-family : 'Lucida Handwriting';
+        word-spacing: 8px;
+        font-size:25px ;
+        line-height: 2;
+        color: #434242;
+
     }
     #para {
         margin:10px;
