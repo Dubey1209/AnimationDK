@@ -14,6 +14,7 @@
 background-color: #E5D283;
 border-radius: 15px 40px;
 border: 3px outset black;
+
 }
 
  
@@ -41,8 +42,18 @@ border: 3px outset black;
             width : 30px ;
             height:30px;
         }
+.connect li{
+    list-style-type: none;
+    margin : 10px 10px ;
+}
 
-
+    .connect li a{
+        text-decoration: none;
+        color: blue;
+        font-weight: 800;
+     
+    }
+          
     h1 {
         text-align :center;
         margin : 50px 50px ;
@@ -115,17 +126,19 @@ border: 3px outset black;
     background-image: url(glassballW.jpg);
 }
 #contact{
-    background-image: url(orangeW.jpg);
+    background-image: url(studentw.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+    
 }
   
-#connect{
+.connect{
     font-size: xx-large;
-    
-    list-style-type: none;
 }
-#connect li{
-    text-decoration: none;
-}
+
+
 
 .target li{
     list-style-type: none;
