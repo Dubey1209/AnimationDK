@@ -31,13 +31,15 @@ border: 3px outset black;
     text-decoration: none;
     color: black;
     font-weight: 800;
-  
-        font-family: 'Lucida Sans';
+   font-family: 'Lucida Sans';
+   transition: width 1s height 2s;
         
     }
     .navbar a:hover {
         background-color: white;
             color: black;
+            width : 30px ;
+            height:30px;
         }
 
 
@@ -47,7 +49,8 @@ border: 3px outset black;
         font-family : 'Lucida Handwriting';
         word-spacing: 8px;
         line-height: 2;
-        color: #025464
+        color: #025464;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
     #animation{
         text-align : left;
@@ -134,46 +137,58 @@ border: 3px outset black;
     color: #262A56;
     font-weight: 700;
     text-align : left;
-        word-spacing: 8px;
-        line-height: 2;
+        word-spacing: 5px;
+        line-height:1;
         font-size:25px ;
-        line-height: 2;
 }
-.disco {
+.disco{
+  background-color: #1F4172;   
+}
 
-    background-color: #0B2447;
- 
+
+#home {
+    position: absolute;
+    bottom: 0;
+    text-align: left; /* Adjust text alignment as needed */
+    width: 100%; /* Make the element span the full width of the page */ 
+    color: #fff; /* Optional text color for the footer */
+    padding: 10px;
 }
-.room {
-    position: relative;
-    width: 100%;
-    height : 100vh;
-    overflow :hidden;
+#home a:hover {
+    color: gold;
+}
+#home a:active {
+    color: lightcoral;
+}
+#dot{
+    height: 80px;
+}
+
+.dot { position: relative;
+    width: 50px;
+  height: 50px;
+  background: white;
+  transition-timing-function: ease-in-out ;
+  border-radius: 50%;
+  transition-duration: 5s;
+  transition-delay: 2s;
+  animation-name: first;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-delay: -1s;
+  animation-direction: alternate;
 
 }
-.ball span{
-    position: relative;
-    display: flex;
-    width:30px;
-    height:30px;
-    border-radius: 50%;
-    background-color: chocolate;
-    margin:0 4px ;
-    box-shadow: 0 0 0 10px  chartreuse, 0 0 50px khaki , 0 0 100px goldenrod ;
-    animation: light 15s linear infinite ;
+@keyframes first {
+    0%   {background-color: red; left: 0px ;  top:600px ; }
+  25%  {background-color: yellow; left:500px; top: 200px ;}
+  50%  {background-color: lightcoral; left: 400px; top:0px ;}
+  10% {background-color: greenyellow; left:0px; top:50px ;}
+  100% {background-color: goldenrod; left:30px; top:250px ;}
 }
-.ball span:nth-child(even){
-    background-color: red;
-    box-shadow: 0 0 0 10px  darkmagenta , 0 0 50px darkorchid , 0 0 100px darkorchid;
-}
-@keyframes light  {
-
-    0%
-    {
-        transform: translateY(100vh) scale(0);
-    }
-    100%
-    { 
-        transform: translateY(-10vh) scale(1);
-    }
+.dot:hover{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    transform: rotate(180deg);
 }
