@@ -160,35 +160,266 @@ border: 3px outset black;
 #home a:active {
     color: lightcoral;
 }
-#dot{
+/* Animation for Ball 1 */
+#dot1{
     height: 80px;
 }
 
-.dot { position: relative;
+.dot1 { position: relative;
     width: 50px;
   height: 50px;
   background: white;
   transition-timing-function: ease-in-out ;
   border-radius: 50%;
-  transition-duration: 5s;
-  transition-delay: 2s;
+  box-shadow: 20px 20px 50px 15px #D1FFF3;
+  transition-duration: 1S;
+  transition-delay: 1s;
   animation-name: first;
-  animation-duration: 8s;
+  animation-duration: 16s;
   animation-iteration-count: infinite;
   animation-delay: -1s;
   animation-direction: alternate;
 
 }
 @keyframes first {
-    0%   {background-color: red; left: 0px ;  top:600px ; }
+    0%   {background-color: red; left: 100px ;  top:600px ; }
   25%  {background-color: yellow; left:500px; top: 200px ;}
-  50%  {background-color: lightcoral; left: 400px; top:0px ;}
-  10% {background-color: greenyellow; left:0px; top:50px ;}
-  100% {background-color: goldenrod; left:30px; top:250px ;}
+  30%  {background-color: lightcoral; left: 300px; top:100px ;}
+  10% {background-color: greenyellow; left:0px; top:500px ;}
+  550% {background-color: teal; left:30px; top:80px ;}
+  67% {background-color: greenyellow; left:900px; top:50px ;}
+  100% {background-color: mediumturquoise ; left:30px; top:300px ;}
+
 }
-.dot:hover{
-    width: 100px;
+.dot1:hover{
+    width: 200px;
+    height: 200px;
+    background: #00DFA2;
+    transform: rotate(180deg);
+}
+/* Animation for Ball 2*/
+
+.dot2{
     height: 100px;
-    background: yellow;
+}
+
+.dot2 { position: relative;
+    width: 50px;
+  height: 50px;
+  background: white;
+  transition-timing-function: ease-in-out ;
+  border-radius: 50%;
+  box-shadow: 20px 20px 50px 15px #76BA99;
+  transition-duration: 1S;
+  transition-delay: 1s;
+  animation-name: second;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  animation-delay: -1s;
+  animation-direction: alternate;
+
+}
+@keyframes second {
+    0%   {background-color: #C8FFE0; left: 100px ;  top:200px ; }
+  25%  {background-color: #F94C10; left:200px; top: 200px ;}
+  30%  {background-color: #E48586; left: 400px; top:230px ;}
+  42% {background-color: #7A9D54; left:0px; top:500px ;}
+  55% {background-color: teal; left:30px; top:50px ;}
+  60% {background-color: #FFCC70; left:600px; top:50px ;}
+  100% {background-color: #CECE5A ; left:30px; top:300px ;}
+
+}
+.dot2:hover{
+    width: 300px;
+    height: 300px;
+    background: #9E6F21;
+    transform: rotate(180deg);
+}
+/* Animation for Ball 3*/
+
+#dot3{
+    width: 50px;
+}
+
+.dot3 { position: relative;
+    width: 50px;
+  height: 50px;
+  background: white;
+  transition-timing-function: ease-in-out ;
+  border-radius: 50%;
+  box-shadow: 20px 20px 50px 15px #19A7CE;
+  transition-duration: 1S;
+  transition-delay: 1s;
+  animation-name: third;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-delay: -1s;
+  animation-direction: alternate ;
+
+}
+@keyframes third {
+  0%   {background-color: red; left: 100px ;  top:600px ; }
+  20%  {background-color: #F9E2AF; left:500px; top: 200px ;}
+  30%  {background-color: #009FBD; left: 300px; top:100px ;}
+  50% {background-color: #AACB73; left:0px; top:500px ;}
+  60% {background-color: #76BA99; left:30px; top:80px ;}
+  70% {background-color: #3AB0FF; left:900px; top:50px ;}
+  100% {background-color: #FFA1F5 ; left:30px; top:300px ;}
+
+}
+.dot3:hover{
+    width: 20px;
+    height: 20px;
+    background: #CBFFA9;
+    transform: rotate(270deg);
+}
+
+/* Animation for Ball 4*/
+
+.dot4{
+    height: 60px;
+}
+
+.dot4 { position: relative;
+    width: 50px;
+  height: 50px;
+  background: white;
+  transition-timing-function: ease-in ;
+  border-radius: 50%;
+  box-shadow: 20px 20px 50px 15px #FFB000;
+  transition-duration: 1S;
+  transition-delay: 1s;
+  animation-name: four;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: -2s;
+  animation-direction: alternate-reverse;
+
+}
+@keyframes four {
+  0%   {background-color: #C0DEFF; left: 0px ;  top:600px ; }
+  15%  {background-color: #809A6F; left:100px; top: 0px ;}
+  30%  {background-color: #75CFB8; left: 300px; top:630px ;}
+  45% {background-color: #7A9D54; left:0px; top:580px ;}
+  60% {background-color: #BEADFA; left:0x; top:50px ;}
+  75% {background-color: #CBFFA9; left:250px; top:50px ;}
+  100% {background-color: #A8DF8E; left:20px; top:390px ;}
+
+}
+.dot4:hover{
+    width: 20px;
+    height: 20px;
+    background: #3AA6B9;
+    transform: rotate(180deg);
+}
+
+/*Animation 5th Ball */
+#dot5{
+    height: 100px;
+}
+
+.dot5{ position: relative;
+    width: 50px;
+  height: 50px;
+  background: white;
+  transition-timing-function: ease-in-out ;
+  border-radius: 50%;  box-shadow: 20px 20px 50px 15px #ADA2FF;
+
+  transition-duration: 1S;
+  transition-delay: 1s;
+  animation-name: five;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  animation-delay: -1s;
+  animation-direction: alternate-reverse;
+
+}
+@keyframes five{
+    0%   {background-color: white; left: 100px ;  top:600px ; }
+  25%  {background-color:#BEADFA ; left:500px; top: 200px ;}
+  30%  {background-color: green; left: 300px; top:100px ;}
+  10% {background-color: lightcoral; left:0px; top:500px ;}
+  550% {background-color:#7A9D54 ; left:30px; top:80px ;}
+  67% {background-color: #FFA1F5 ; left:900px; top:50px ;}
+  100% {background-color: #F9E2AF ; left:30px; top:300px ;}
+
+}
+.dot5:hover{
+    width: 15px;
+    height: 150px;
+    background: #D25380;
+    transform: rotate(180deg);
+}
+/* Animation 6th */
+.dot6{
+    height: 50px;
+}
+
+.dot6{ position: relative;
+    width: 50px;
+  height: 50px;
+  background: white;
+  transition-timing-function: linear ;
+  border-radius: 50%;
+  border-radius: 50%;  box-shadow: 20px 20px 50px 15px #0096FF;
+  transition-duration: 1S;
+  transition-delay: 1s;
+  animation-name: six;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  animation-delay: -1s;
+  animation-direction: alternate;
+
+}
+@keyframes six{
+    0%   {background-color: #73BBC9; left:760px; top:0px;}
+  25%  {background-color:yellow; left:900px; top:0px;}
+  50%  {background-color: #AAC8A7; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:600px;}
+  100% {background-color:white; left:800px; top:0px;}
+
+   
+}
+.dot6:hover{
+    width: 150px;
+    height: 150px;
+    background:#6DA9E4;
+    transform: rotate(180deg);
+}
+/*Animation 7 */
+#dot7{
+    height: 100px;
+}
+
+.dot7{ position: relative;
+    width: 50px;
+  height: 50px;
+  background: white;
+  transition-timing-function: ease-out ;
+  border-radius: 50%;  box-shadow: 20px 20px 50px 15px #F99417;
+
+  transition-duration: 1S;
+  transition-delay: 1s;
+  animation-name: seven;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  animation-delay: -1s;
+  animation-direction :normal ;
+
+}
+@keyframes seven{
+    0%   {background-color: #B7CADB; left: 100px ;  top:300px ; }
+  25%  {background-color:#ECCDB4 ; left:900px; top: 50px ;}
+  30%  {background-color: #95BDFF; left: 300px; top:80px ;}
+  10% {background-color: #5F264A; left:150px; top:750px ;}
+  550% {background-color:#116A7B ; left:30px; top:100px ;}
+  67% {background-color: #618264 ; left:500px; top:200px ;}
+  100% {background-color: #BA90C6 ; left:100px; top:600px ;}
+
+}
+.dot7:hover{
+    width: 150px;
+    height: 150px;
+    background: #A0C49D;
     transform: rotate(180deg);
 }
