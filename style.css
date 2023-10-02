@@ -132,7 +132,7 @@ border: 3px outset black;
     background-size: cover;
 }
     
-}
+
   
 .connect{
     font-size: xx-large;
@@ -155,7 +155,7 @@ border: 3px outset black;
         font-size:25px ;
 }
 .disco{
-  background-color: #1F4172;   
+  background-color:black;   
 }
 
 
@@ -436,3 +436,43 @@ border: 3px outset black;
     background: #A0C49D;
     transform: rotate(180deg);
 }
+
+/* Animation ball 8 */
+.dot8{
+    height: 50px;
+}
+
+.dot8 { 
+    position: relative;
+    width: 50px;
+  height: 50px;
+  background: white;
+  transition-timing-function: ease-in ;
+  border-radius: 50%;
+  box-shadow: 20px 20px 50px 25px #F90716;
+  transition-duration: 1S;
+  transition-delay: 1s;
+  animation-name: eight;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-delay: -2s;
+  animation-direction: alternate-reverse;
+
+}
+@keyframes eight {
+  0%   {background-color: #A8D8EA; left: 10px ;  top:300px ; }
+  5%  {background-color: #FC5185; left:0px; top: 800px ;}
+  10%  {background-color: #79AC78; left: 300px; top:60px ;}
+  20% {background-color: #FFB000 ;left:700px; top:0px ;}
+  60% {background-color: #9575DE; left:800px; top:50px ;}
+  70% {background-color: #1A4D2E; left:250px; top:500px ;}
+  100% {background-color: #A6F0C6; left:20px; top:450px ;}
+
+}
+.dot8:hover{
+    width: 200px;
+    height: 200px;
+    background: #C0E218;
+    transform: rotate(180deg);
+}
+
