@@ -476,3 +476,15 @@ border: 3px outset black;
     transform: rotate(180deg);
 }
 
+
+/* Styling Night page */
+ .jungle{
+    margin :0px ;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    overflow-y: hidden;
+ }
+.night{
+    height: 90vh;
+    width : 80vw;
+    border: 1px solid black;
+}
